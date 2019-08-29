@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c614bb1c-ff14-4401-baa0-25251cd47faf" name="Default Changelist" comment="" />
@@ -12,12 +12,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/firstClass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CamControl.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/firstClass.cs" />
+        <option value="$PROJECT_DIR$/Assets/CamControl.cs" />
       </list>
     </option>
   </component>
@@ -68,6 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1566941475669</updated>
       <workItem from="1566941479294" duration="945000" />
+      <workItem from="1567111264377" duration="2562000" />
     </task>
     <servers />
   </component>
@@ -81,7 +83,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
