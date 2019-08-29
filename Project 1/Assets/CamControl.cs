@@ -5,21 +5,21 @@ using UnityEngine;
 public class CamControl : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start() {
+    private void Start() {
         print(message:"Hello World");
         
     }
 
-    private int Counter;
-    private int passedTime;
+    public int Counter; //used for timer
+    public int passedTime; //used for timer
 
     // Update is called once per frame
-    void Update() {
-        Counter++;
-        if (Counter==60) {
-            passedTime++;
-            print(message: passedTime + " seconds have passed...");
-            Counter = 0;
+    private void Update() {
+        Counter++; //increments counter every frame
+        if (Counter==60) { //60 means 60 frames or 1 second has passed
+            passedTime++; //increment my timer every scond
+            print(message: passedTime + " seconds have passed..."); //show on the console how much time has passed in seconds
+            Counter = 0; //reset to 0 so we can start counting the new second
         }
     }
 }
