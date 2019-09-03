@@ -18,7 +18,7 @@ public class CamControl : MonoBehaviour
         Counter++; //increments counter every frame
         if (Counter==counterInterval) { //60 means 60 frames or 1 second has passed
             passedTime++; //increment my timer every scond
-            print(message: passedTime + " " + intervalType + "s have passed..."); //show on the console how much time has passed in seconds
+            print(message: passedTime + " " + intervalType + "s have passed...");//show on the console how much time has passed in seconds
             Counter = 0; //reset to 0 so we can start counting the new second
         }
     }
