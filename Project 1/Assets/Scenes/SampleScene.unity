@@ -153,6 +153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Counter: 0
   passedTime: 0
+  counterInterval: 60
+  intervalType: second
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
