@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CamControl.cs" />
+    <Compile Include="Assets\CameraMovement.cs" />
     <Compile Include="Assets\CharacterControl.cs" />
     <Compile Include="Assets\Variables.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
