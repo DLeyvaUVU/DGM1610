@@ -8,7 +8,7 @@ public class CharacterControl : MonoBehaviour
     //modifying your sample script "SimpleCharacterControl.cs" to fit my needs
     private Vector2 moveVector;
     private CharacterController character;
-    public GameObject Camera;
+    public CameraMovement CameraScript;
     public float charSpeed = 2;
 
     private void Start()
@@ -25,9 +25,13 @@ public class CharacterControl : MonoBehaviour
         character.Move(moveVector);//wasn't sure if this function accepted a Vector2 but it works
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Camera.CameraSnap(other.transform.position);
+    private void OnTriggerEnter(Collider other){
+        CameraScript.PlayerFocus = !CameraScript.PlayerFocus;
+        StartCoroutine(CameraScript.CameraSnap(other.transform.position));
+    }
+    private void OnTriggerExit(Collider other) {
+        CameraScript.PlayerFocus = !CameraScript.PlayerFocus;
+        StartCoroutine(CameraScript.CameraSnap(transform.position));
     }
 
     private void Update()
