@@ -9,6 +9,7 @@
         <e p="CamControl.cs" t="Include" />
         <e p="CameraMovement.cs" t="Include" />
         <e p="CharacterControl.cs" t="Include" />
+        <e p="FloatData.cs" t="Include" />
         <e p="Variables.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />

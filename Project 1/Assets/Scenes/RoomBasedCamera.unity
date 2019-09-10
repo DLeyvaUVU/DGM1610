@@ -428,8 +428,10 @@ MonoBehaviour:
   PlayerFocus: 0
   CameraControl: {fileID: 1099897449}
   Player: {fileID: 383467273}
-  playerPosition: {x: 0, y: 0, z: 0}
   minSpeed: 4
+  camHeightRoom: 5
+  camHeightPlayer: 10
+  cam: {fileID: 1099897446}
 --- !u!143 &1099897449
 CharacterController:
   m_ObjectHideFlags: 0
