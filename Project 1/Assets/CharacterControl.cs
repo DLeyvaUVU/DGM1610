@@ -25,13 +25,14 @@ public class CharacterControl : MonoBehaviour
         character.Move(moveVector);//wasn't sure if this function accepted a Vector2 but it works
     }
 
-    private void OnTriggerEnter(Collider other){
+    private void OnTriggerEnter(Collider other){//snaps to rooms, would need some adjustments if I put anything else in the scene other than rooms and the player
+        StopAllCoroutines();//make sure the coroutine doesn't interfere with itself whenever I start it
         CameraScript.PlayerFocus = !CameraScript.PlayerFocus;
         StartCoroutine(CameraScript.CameraSnap(other.transform.position));
     }
-    private void OnTriggerExit(Collider other) {
+    private void OnTriggerExit(Collider other) {//go back to following the player
+        StopAllCoroutines();//make sure the coroutine doesn't interfere with itself whenever I start it
         CameraScript.PlayerFocus = !CameraScript.PlayerFocus;
-        StartCoroutine(CameraScript.CameraSnap(transform.position));
     }
 
     private void Update()
