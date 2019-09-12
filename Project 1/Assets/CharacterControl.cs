@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CharacterControl : MonoBehaviour
 {
@@ -10,6 +11,12 @@ public class CharacterControl : MonoBehaviour
     private CharacterController character;
     public CameraMovement CameraScript;
     public float charSpeed = 2;
+    public UnityEvent doThing;
+
+    private void OnMouseDown() {
+        doThing.Invoke();
+    }
+    
 
     private void Start()
     {

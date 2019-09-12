@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CamControl : MonoBehaviour
-{
+public class CamControl : MonoBehaviour {
     // Start is called before the first frame update
     private void Start() {
         print(message:"Hello World");

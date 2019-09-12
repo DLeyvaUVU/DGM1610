@@ -4,7 +4,15 @@ using UnityEngine;
 [CreateAssetMenu]
 public class FloatData : ScriptableObject
 {
-    public int health = 1;
-    public int stamina = 1;
-    public int xp = 0;
+    public float maxValue;
+    public float currentValue;
+    public float magnitude;
+
+    public void AdjustValue(int input) {
+        currentValue += input;
+        if (currentValue < 0) {
+            currentValue = 0;
+        }
+        magnitude = currentValue / maxValue;
+    }
 }

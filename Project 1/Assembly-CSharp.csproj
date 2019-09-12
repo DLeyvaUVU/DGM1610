@@ -67,6 +67,7 @@
     <Compile Include="Assets\CameraMovement.cs" />
     <Compile Include="Assets\CharacterControl.cs" />
     <Compile Include="Assets\FloatData.cs" />
+    <Compile Include="Assets\LightSwitch.cs" />
     <Compile Include="Assets\Variables.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/GitKraken/1610/DGM1610/Project 1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
