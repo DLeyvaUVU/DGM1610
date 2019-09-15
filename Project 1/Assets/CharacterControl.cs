@@ -36,10 +36,12 @@ public class CharacterControl : MonoBehaviour
         StopAllCoroutines();//make sure the coroutine doesn't interfere with itself whenever I start it
         CameraScript.PlayerFocus = !CameraScript.PlayerFocus;
         StartCoroutine(CameraScript.CameraSnap(other.transform.position));
+        StartCoroutine(CameraScript.camZoom(CameraScript.camSizeRoom));
     }
     private void OnTriggerExit(Collider other) {//go back to following the player
         StopAllCoroutines();//make sure the coroutine doesn't interfere with itself whenever I start it
         CameraScript.PlayerFocus = !CameraScript.PlayerFocus;
+        StartCoroutine(CameraScript.camZoom(CameraScript.camSizePlayer));
     }
 
     private void Update()
