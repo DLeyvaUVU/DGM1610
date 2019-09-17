@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class LightSwitch : MonoBehaviour {
     public UnityEvent toggleLight;
-    public ParticleSystem sparks;
+    //public ParticleSystem sparks;
     private void OnMouseDown() {
         toggleLight.Invoke();
         //sparks.Emit(5);

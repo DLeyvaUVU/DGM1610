@@ -15,6 +15,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/CamControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FloatData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LightSwitch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/EnableLight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Variables.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CharacterControl.cs" root0="FORCE_HIGHLIGHTING" />
@@ -27,8 +28,9 @@
         <option value="$PROJECT_DIR$/Assets/CameraMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/CamControl.cs" />
         <option value="$PROJECT_DIR$/Assets/FloatData.cs" />
-        <option value="$PROJECT_DIR$/Assets/CharacterControl.cs" />
         <option value="$PROJECT_DIR$/Assets/LightSwitch.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnableLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/CharacterControl.cs" />
       </list>
     </option>
   </component>
@@ -87,6 +89,7 @@
       <workItem from="1567716589289" duration="6526000" />
       <workItem from="1568147213242" duration="5061000" />
       <workItem from="1568320027248" duration="4573000" />
+      <workItem from="1568753910757" duration="3618000" />
     </task>
     <servers />
   </component>
@@ -124,6 +127,45 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/CharacterControl.cs</url>
+          <line>52</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/CharacterControl.cs" initialLine="40">
+            <startOffsets>
+              <option value="1912" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1913" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/CharacterControl.cs</url>
+          <line>46</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/CharacterControl.cs" initialLine="34">
+            <startOffsets>
+              <option value="1431" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1432" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/CharacterControl.cs</url>
+          <line>17</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/CharacterControl.cs" initialLine="15">
+            <startOffsets>
+              <option value="515" />
+            </startOffsets>
+            <endOffsets>
+              <option value="516" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
