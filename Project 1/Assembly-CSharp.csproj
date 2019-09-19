@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\2dPlatformerScripts\cController.cs" />
     <Compile Include="Assets\CamControl.cs" />
     <Compile Include="Assets\CameraMovement.cs" />
     <Compile Include="Assets\CharacterControl.cs" />

@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[RequireComponent(typeof(CharacterController))]
 public class CameraMovement : MonoBehaviour
 {
     public bool PlayerFocus;//tells the camera whether or not to follow the player
