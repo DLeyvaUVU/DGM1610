@@ -257,7 +257,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -357,10 +357,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1488446460}
-  terminalVelocity: 20
-  gravity: 40
-  jumpVector: 10
+  terminalVelocity: 30
+  gravity: 60
+  jumpVector: 25
   speedVector: 5
+  charSpeed: 5
+  runSpeed: 10
 --- !u!143 &1488446460
 CharacterController:
   m_ObjectHideFlags: 0
