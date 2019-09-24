@@ -46,12 +46,7 @@ public class cController : MonoBehaviour {
             movementVector.y = jumpVector;
             jumpCount++;
         }
-        if (Input.GetButton("Run")) {
-            speedVector = runSpeed;
-        }
-        else {
-            speedVector = charSpeed;
-        }
+        speedVector = Input.GetButton("Run") ? runSpeed : charSpeed;
         if (player.isGrounded) {
             jumpCount = 0;
         }

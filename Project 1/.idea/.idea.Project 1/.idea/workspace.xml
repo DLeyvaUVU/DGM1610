@@ -15,11 +15,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/CamControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FloatData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/2dPlatformerScripts/cController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GetFruit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LightSwitch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EnableLight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Variables.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CharacterControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/2dPlatformerScripts/terrainTrigger.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -33,6 +35,8 @@
         <option value="$PROJECT_DIR$/Assets/CharacterControl.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/cController.cs" />
+        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/terrainTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/GetFruit.cs" />
       </list>
     </option>
   </component>
@@ -93,6 +97,8 @@
       <workItem from="1568320027248" duration="4573000" />
       <workItem from="1568753910757" duration="3618000" />
       <workItem from="1568925794653" duration="3934000" />
+      <workItem from="1569356428811" duration="5686000" />
+      <workItem from="1569362171106" duration="383000" />
     </task>
     <servers />
   </component>
