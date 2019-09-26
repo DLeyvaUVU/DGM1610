@@ -34,9 +34,9 @@
         <option value="$PROJECT_DIR$/Assets/EnableLight.cs" />
         <option value="$PROJECT_DIR$/Assets/CharacterControl.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/cController.cs" />
         <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/terrainTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/GetFruit.cs" />
+        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/cController.cs" />
       </list>
     </option>
   </component>
@@ -99,6 +99,7 @@
       <workItem from="1568925794653" duration="3934000" />
       <workItem from="1569356428811" duration="5686000" />
       <workItem from="1569362171106" duration="383000" />
+      <workItem from="1569530501226" duration="4134000" />
     </task>
     <servers />
   </component>

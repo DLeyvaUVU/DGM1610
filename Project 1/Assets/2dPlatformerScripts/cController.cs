@@ -11,9 +11,13 @@ public class cController : MonoBehaviour {
     private bool busy = false;
     private Vector3 movementVector;
     private int jumpCount;
+    public ParticleSystem charge;
+    private ParticleSystem.ShapeModule chargeShapeModule;
+    private Coroutine initCharge;
 
     private void Start() {
         player = GetComponent<CharacterController>();
+        chargeShapeModule = charge.shape;
     }
 
     private void Move(float inputX) {
@@ -28,15 +32,33 @@ public class cController : MonoBehaviour {
         player.Move(movementVector * Time.deltaTime);
     }
 
-    public IEnumerator BulletTimeFire(Vector3 initialMovement) {
+    private IEnumerator BulletTimeFire(Vector3 initialMovement) {
+        initCharge = StartCoroutine(ChargeEffect());
         while (Input.GetButton("Fire2")) {
             movementVector *= 0;
             yield return null;
         }
+
+        if (initCharge != null) {
+            StopCoroutine(initCharge);
+        }
         movementVector = initialMovement;
         busy = false;
+        chargeShapeModule.radiusThickness = 0;
         print("shoot projectile in direction of mouse or left stick on controller");
         //at this point I would shoot something, but I'm not quite sure how to do that yet.
+    }
+
+    private IEnumerator ChargeEffect() {
+        int counter = 1;
+        while (Input.GetButton("Fire2")) {
+            charge.Emit(5*counter);
+            counter++;
+            chargeShapeModule.radiusThickness += .01f;
+            yield return new WaitForSeconds(.5f);
+        }
+
+        chargeShapeModule.radiusThickness = 0;
     }
     private void Update() {
         if (!busy) {
