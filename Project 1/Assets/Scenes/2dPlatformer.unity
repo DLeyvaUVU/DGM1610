@@ -569,7 +569,7 @@ MonoBehaviour:
   - Apple
   - Orange
   - Peach
-  ripe: 00000001
+  ripe: 000000
 --- !u!4 &1645904590
 Transform:
   m_ObjectHideFlags: 0
