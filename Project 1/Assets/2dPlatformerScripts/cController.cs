@@ -7,9 +7,10 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class cController : MonoBehaviour {
     public CharacterController player;
-    public float terminalVelocity, gravity = 9.81f, jumpVector, speedVector, charSpeed, runSpeed;
+    public float terminalVelocity, gravity = 9.81f, jumpVector, speedVector, charSpeed, runSpeed, friction;
     private bool busy = false;
     private Vector3 movementVector;
+    public Vector3 momentumVector = Vector3.zero;
     private int jumpCount;
     public ParticleSystem charge;
     private ParticleSystem.ShapeModule chargeShapeModule;
@@ -29,7 +30,11 @@ public class cController : MonoBehaviour {
                 movementVector.y = -terminalVelocity;
             }
         }
-        player.Move(movementVector * Time.deltaTime);
+        player.Move((movementVector + momentumVector) * Time.deltaTime);
+    }
+    private void zeroMomentum () {
+        Vector3 i = Vector3.zero;
+        momentumVector = Vector3.MoveTowards(momentumVector, Vector3.zero, friction * Time.deltaTime);
     }
 
     private IEnumerator BulletTimeFire(Vector3 initialMovement) {
@@ -45,6 +50,7 @@ public class cController : MonoBehaviour {
         movementVector = initialMovement;
         busy = false;
         chargeShapeModule.radiusThickness = 0;
+        momentumVector.x = Input.GetAxis("Horizontal") * -5;
         print("shoot projectile in direction of mouse or left stick on controller");
         //at this point I would shoot something, but I'm not quite sure how to do that yet.
     }
@@ -63,6 +69,7 @@ public class cController : MonoBehaviour {
     private void Update() {
         if (!busy) {
             Move(Input.GetAxis("Horizontal"));
+            zeroMomentum();
         }
         if (Input.GetButtonDown("Jump") && jumpCount < 1) {
             movementVector.y = jumpVector;
