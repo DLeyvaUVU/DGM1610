@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Projectile Data
   m_EditorClassIdentifier: 
   stringValue: []
-  floatValue: []
-  boolValue: 
-  intValue: 
+  floatValue:
+  - 20
+  - 20
+  boolValue: 00
+  intValue: 01000000
