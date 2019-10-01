@@ -15,6 +15,7 @@ public class cController : MonoBehaviour {
     public ParticleSystem charge;
     private ParticleSystem.ShapeModule chargeShapeModule;
     private Coroutine initCharge;
+    public GameObject bulletPrefab;
 
     private void Start() {
         player = GetComponent<CharacterController>();
@@ -51,8 +52,13 @@ public class cController : MonoBehaviour {
         busy = false;
         chargeShapeModule.radiusThickness = 0;
         momentumVector.x = Input.GetAxis("Horizontal") * -5;
-        print("shoot projectile in direction of mouse or left stick on controller");
-        //at this point I would shoot something, but I'm not quite sure how to do that yet.
+        Vector2 position = transform.position;
+        Vector2 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 bulletDirection = targetPosition - position;
+        bulletDirection.Normalize();
+        var bullet = Instantiate(bulletPrefab);
+        bullet.transform.position = position;
+        bullet.SendMessage("SetDirection", bulletDirection);
     }
 
     private IEnumerator ChargeEffect() {

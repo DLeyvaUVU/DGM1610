@@ -4,6 +4,8 @@ using UnityEngine;
 
 [CreateAssetMenu]
 public class varData : ScriptableObject {
-    public string[] varNames;
-    public float[] values;
+    public string[] stringValue;
+    public float[] floatValue;
+    public bool[] boolValue;
+    public int[] intValue;
 }
