@@ -18,10 +18,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Variables.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CharacterControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/2dPlatformerScripts/UIimageController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/2dPlatformerScripts/varData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FloatData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/2dPlatformerScripts/cController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/2dPlatformerScripts/TriggerEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EnableLight.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/2dPlatformerScripts/monoEvents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/2dPlatformerScripts/terrainTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/2dPlatformerScripts/projectileControl.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -31,7 +34,6 @@
         <option value="$PROJECT_DIR$/Assets/firstClass.cs" />
         <option value="$PROJECT_DIR$/Assets/Variables.cs" />
         <option value="$PROJECT_DIR$/Assets/CamControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/FloatData.cs" />
         <option value="$PROJECT_DIR$/Assets/LightSwitch.cs" />
         <option value="$PROJECT_DIR$/Assets/EnableLight.cs" />
         <option value="$PROJECT_DIR$/Assets/CharacterControl.cs" />
@@ -41,6 +43,10 @@
         <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/varData.cs" />
         <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/projectileControl.cs" />
         <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/cController.cs" />
+        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/monoEvents.cs" />
+        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/UIimageController.cs" />
+        <option value="$PROJECT_DIR$/Assets/FloatData.cs" />
+        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/TriggerEvent.cs" />
       </list>
     </option>
   </component>
@@ -105,6 +111,7 @@
       <workItem from="1569362171106" duration="383000" />
       <workItem from="1569530501226" duration="4134000" />
       <workItem from="1569961828291" duration="4385000" />
+      <workItem from="1570135588349" duration="4203000" />
     </task>
     <servers />
   </component>

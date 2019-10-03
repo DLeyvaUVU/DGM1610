@@ -64,8 +64,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\2dPlatformerScripts\cController.cs" />
+    <Compile Include="Assets\2dPlatformerScripts\monoEvents.cs" />
     <Compile Include="Assets\2dPlatformerScripts\projectileControl.cs" />
     <Compile Include="Assets\2dPlatformerScripts\terrainTrigger.cs" />
+    <Compile Include="Assets\2dPlatformerScripts\TriggerEvent.cs" />
+    <Compile Include="Assets\2dPlatformerScripts\UIimageController.cs" />
     <Compile Include="Assets\2dPlatformerScripts\varData.cs" />
     <Compile Include="Assets\CamControl.cs" />
     <Compile Include="Assets\CameraMovement.cs" />
