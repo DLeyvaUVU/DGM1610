@@ -16,5 +16,6 @@ MonoBehaviour:
   floatValue:
   - 20
   - 20
+  - 3
   boolValue: 00
   intValue: 01000000
