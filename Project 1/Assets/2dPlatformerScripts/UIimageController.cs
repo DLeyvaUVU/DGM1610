@@ -7,22 +7,25 @@ using UnityEngine.UI;
 public class UIimageController : MonoBehaviour {
     private Image img;
     private Coroutine animCoroutine;
+    public float animSpeed = .01f;//must be less than 1 and positive
     private float animDirection = 1;
     private void Awake() {
         img = GetComponent<Image>();
     }
     private IEnumerator animateFill(float magnitude) {
-        // animDirection = (magnitude - img.fillAmount >= 0) ? 1 : -1;
-        // for (float distance = animDirection * (magnitude - img.fillAmount); distance > 0) {
-
-        // }
+        animDirection = (magnitude - img.fillAmount >= 0) ? 1 : -1;//gets whether the fill needs to increase or decrease
+        float distance = animDirection * (magnitude - img.fillAmount);//gets length of animation
+        for (float ft = 0; ft < distance; ft += animSpeed) {
+            img.fillAmount += animDirection * animSpeed;
+            yield return null;
+        }
+        img.fillAmount = magnitude;//floating point imprecision might not make it exact, this guarantees it.
         yield return null;
     }
     public void UpdateImage(FloatData data) {
         if (animCoroutine != null) {
-            StopCoroutine(animCoroutine);
+            StopCoroutine(animCoroutine);//stop running animation
         }
-        animCoroutine = StartCoroutine(animateFill(data.magnitude));
-        //img.fillAmount = data.magnitude;
+        animCoroutine = StartCoroutine(animateFill(data.magnitude));//start animation
     }
 }

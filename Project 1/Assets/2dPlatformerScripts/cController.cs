@@ -5,7 +5,7 @@ using System.Diagnostics.Tracing;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class cController : MonoBehaviour {
+public class CController : MonoBehaviour {
     public CharacterController player;
     public float terminalVelocity, gravity = 9.81f, jumpVector, speedVector, charSpeed, runSpeed, friction;
     private bool busy = false;
@@ -33,7 +33,7 @@ public class cController : MonoBehaviour {
         }
         player.Move((movementVector + momentumVector) * Time.deltaTime);
     }
-    private void zeroMomentum () {
+    private void ZeroMomentum () {
         Vector3 i = Vector3.zero;
         momentumVector = Vector3.MoveTowards(momentumVector, Vector3.zero, friction * Time.deltaTime);
     }
@@ -75,7 +75,7 @@ public class cController : MonoBehaviour {
     private void Update() {
         if (!busy) {
             Move(Input.GetAxis("Horizontal"));
-            zeroMomentum();
+            ZeroMomentum();
         }
         if (Input.GetButtonDown("Jump") && jumpCount < 1) {
             movementVector.y = jumpVector;
