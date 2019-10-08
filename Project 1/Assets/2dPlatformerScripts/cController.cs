@@ -5,7 +5,7 @@ using System.Diagnostics.Tracing;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class CController : MonoBehaviour {
+public class cController : MonoBehaviour {
     public CharacterController player;
     public float terminalVelocity, gravity = 9.81f, jumpVector, speedVector, charSpeed, runSpeed, friction;
     private bool busy = false;

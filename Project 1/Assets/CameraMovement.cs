@@ -19,6 +19,10 @@ public class CameraMovement : MonoBehaviour
         PlayerFocus = true;
     }
 
+    public void SetPlayer(GameObject newPlayer) {
+        Player = newPlayer;
+    }
+
     public IEnumerator CameraSnap(Vector2 newFocus)//used for snapping the camera to the center of a room (only called within characterControl.cs)
     {
         while (CamPosition != newFocus && Vector2.Distance(newFocus, CamPosition) > .05)
