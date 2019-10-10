@@ -39,19 +39,20 @@
         <option value="$PROJECT_DIR$/Assets/LightSwitch.cs" />
         <option value="$PROJECT_DIR$/Assets/EnableLight.cs" />
         <option value="$PROJECT_DIR$/Assets/CharacterControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/terrainTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/GetFruit.cs" />
         <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/varData.cs" />
         <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/projectileControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/monoEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/UIimageController.cs" />
-        <option value="$PROJECT_DIR$/Assets/FloatData.cs" />
         <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/TriggerEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/cController.cs" />
         <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/npcData.cs" />
-        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/ArtData.cs" />
         <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/globalVar.cs" />
+        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/cController.cs" />
+        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/terrainTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/FloatData.cs" />
+        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/testEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/ArtData.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/2dPlatformerScripts/monoEvents.cs" />
       </list>
     </option>
   </component>
@@ -118,7 +119,8 @@
       <workItem from="1569961828291" duration="4385000" />
       <workItem from="1570135588349" duration="4203000" />
       <workItem from="1570508789857" duration="278000" />
-      <workItem from="1570566624582" duration="3649000" />
+      <workItem from="1570566624582" duration="3849000" />
+      <workItem from="1570739606425" duration="3105000" />
     </task>
     <servers />
   </component>

@@ -77,6 +77,22 @@ MonoBehaviour:
   charge: {fileID: 8692363920792939258}
   bulletPrefab: {fileID: 4506096865167978126, guid: a295c7608a4fb3848a4d5bd13f279641,
     type: 3}
+  setPlayer:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 102900000, guid: 8e5d7e06b8b3feb4c877328b53adc838, type: 3}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!198 &8692363920792939258
 ParticleSystem:
   m_ObjectHideFlags: 0

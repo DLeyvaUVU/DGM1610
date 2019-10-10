@@ -9,7 +9,12 @@ public class terrainTrigger : MonoBehaviour {
     public UnityEvent triggerEvent;
     public Transform resetPoint;
 
+    public void SetPlayer(GameObject newPlayer) {
+        player = newPlayer;
+    }
+
     private void OnTriggerEnter(Collider other) {
+        player.SetActive(false);
         triggerEvent.Invoke();
         player.transform.position = resetPoint.position;
         player.SetActive(true);

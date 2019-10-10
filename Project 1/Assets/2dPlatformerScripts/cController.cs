@@ -16,6 +16,7 @@ public class cController : MonoBehaviour {
     private ParticleSystem.ShapeModule chargeShapeModule;
     private Coroutine initCharge;
     public GameObject bulletPrefab;
+    
 
     private void Start() {
         player = GetComponent<CharacterController>();

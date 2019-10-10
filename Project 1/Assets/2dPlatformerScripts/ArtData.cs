@@ -8,10 +8,11 @@ public class ArtData : ScriptableObject {
     public Color color;
     public GameObject prefab;
 
-    public void InstancePlayer() {
+    public GameObject InstancePlayer() {
         var newPlayer = Instantiate(prefab);
         var playerSprite = newPlayer.GetComponentInChildren<SpriteRenderer>();
         playerSprite.color = color;
         playerSprite.sprite = sprite;
+        return newPlayer;
     }
 }

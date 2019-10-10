@@ -436,7 +436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerFocus: 0
   CameraControl: {fileID: 695932128}
-  Player: {fileID: 0}
+  Player: {fileID: 1645904587}
   minSpeed: 3
   camSizeRoom: 5
   camSizePlayer: 5
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 856f5abe77b78a64480d56de642d7f76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1645904587}
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
@@ -581,17 +581,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: -10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -775,23 +764,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 9761fe110a7eace4292abab8dee5ba72, type: 2}
-        m_MethodName: InstancePlayer
+      - m_Target: {fileID: 695932123}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 1870a83d70ddd7c4a84775bba554706e, type: 2}
-        m_MethodName: SetPlayer
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1645904587}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -799,6 +777,10 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  playerData: {fileID: 11400000, guid: 9761fe110a7eace4292abab8dee5ba72, type: 2}
+  player: {fileID: 1645904587}
+  camScript: {fileID: 695932127}
+  resetTrigger: {fileID: 1314149079}
 --- !u!4 &1377197163
 Transform:
   m_ObjectHideFlags: 0
