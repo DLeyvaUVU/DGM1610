@@ -8,8 +8,9 @@ public class SnapMovement : BaseMovementController {
     public Transform currentTarget, previousTarget;
     public Vector2 targetPosition;
     public int minSpeed = 1, speedExponent = 2;
+    private Coroutine snapRoutine;
     
-    
+
     public void ToggleMoveMode() {
         moveContinuously = !moveContinuously;
     }
@@ -38,10 +39,34 @@ public class SnapMovement : BaseMovementController {
         if (movementVector.magnitude > distance) {
             movementVector = movementVector.normalized * distance;
         }
-
         movementManip.Move(movementVector);
-        print(direction);
-        print(distance);
+    }
+
+    public IEnumerator SnapAndHold(Transform target, float holdTime) {
+        float distance;
+        bool initialMoveMode = moveContinuously;
+        moveContinuously = true;
+        SetTarget(target);
+        distance = Vector2.Distance(current2AxisPosition, targetPosition);
+        while (!Mathf.Approximately(0.0f, distance)) {
+            distance = Vector2.Distance(current2AxisPosition, targetPosition);
+            yield return null;
+        }
+        yield return new WaitForSeconds(holdTime);
+        ReturnToPreviousTarget();
+        distance = Vector2.Distance(current2AxisPosition, targetPosition);
+        while (!Mathf.Approximately(0.0f, distance)) {
+            distance = Vector2.Distance(current2AxisPosition, targetPosition);
+            yield return null;
+        }
+        moveContinuously = initialMoveMode;
+    }
+
+    public void QuickSnap(Transform quickTarget) {
+        if (snapRoutine != null) {
+            StopCoroutine(snapRoutine);
+        }
+        snapRoutine = StartCoroutine(SnapAndHold(quickTarget, 0.1f));
     }
 
     private void Update() {
