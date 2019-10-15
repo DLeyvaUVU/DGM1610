@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\typhl\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\typhl\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Project02.29754290.00" t="ExcludeRecursive" />
+    <e p="C:\Users\typhl\Documents\Git\DGM1610\Project02" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Resources" t="Include">
+          <e p="GlobalVars" t="Include">
+            <e p="GlobalFloat.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="BaseEventScript.cs" t="Include" />
+          <e p="BaseMovementController.cs" t="Include" />
+          <e p="SnapMovement.cs" t="Include" />
+          <e p="StartEvent.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Project02.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
