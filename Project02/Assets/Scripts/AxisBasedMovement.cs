@@ -8,8 +8,12 @@ public class AxisBasedMovement : BaseMovementController
 {
     public Vector2 momentum = Vector2.zero;
     public float moveSpeed = 5f, runMultiplier = 2, gravity = 9.8f, jumpVector = 10f, maxJump = 1, terminalVelocity = 20, friction = 3;
+    public float jumpCount = 0;
     public bool running = false;
 
+    public void AddMomentum(float newMomentum) {
+        momentum.y += newMomentum;
+    }
     public float ApplyGravity(float fallAxis) {
         if (!movementManip.isGrounded) {
             fallAxis -= gravity * Time.deltaTime;
@@ -52,7 +56,7 @@ public class AxisBasedMovement : BaseMovementController
     }
 
     public void ZeroMomentum() {
-        Vector2 momentumRef = Vector2.zero;
-        momentum = Vector2.SmoothDamp(momentum, Vector2.zero, ref momentumRef, friction);
+        float step = friction * Time.deltaTime;
+        momentum = Vector2.MoveTowards(momentum, Vector2.zero, step);
     }
 }

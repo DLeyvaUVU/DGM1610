@@ -4,9 +4,9 @@ using UnityEngine;
 
 [CreateAssetMenu]
 public class GlobalFloat : ScriptableObject {
-    public int maxValue = 10;
-    public int minValue = 0;
-    public int currentValue = 10;
+    public float maxValue = 10;
+    public float minValue = 0;
+    public float currentValue = 10;
     public float magnitude = 1;
 
     public void UpdateValue(int input) {
@@ -18,7 +18,7 @@ public class GlobalFloat : ScriptableObject {
         if (currentValue < minValue) {
             currentValue = minValue;
         }
-
+        
         magnitude = currentValue / maxValue;
     }
 }

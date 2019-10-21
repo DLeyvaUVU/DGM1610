@@ -12,6 +12,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SnapMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/GlobalVars/GlobalFloat.cs" root0="FORCE_HIGHLIGHTING" />
@@ -19,19 +20,23 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AxisBasedMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseMovementController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UIControllers/ImageUIController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Resources/GlobalVars/GlobalFloat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BaseEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BaseEventScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StartEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SnapMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BaseMovementController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AxisBasedMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/GlobalFloatData.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIControllers/ImageUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/GlobalVars/GlobalFloat.cs" />
       </list>
     </option>
   </component>
@@ -86,7 +91,7 @@
       <workItem from="1571105654644" duration="10694000" />
       <workItem from="1571171738652" duration="3245000" />
       <workItem from="1571619038067" duration="94000" />
-      <workItem from="1571619263872" duration="6593000" />
+      <workItem from="1571619263872" duration="12957000" />
     </task>
     <servers />
   </component>

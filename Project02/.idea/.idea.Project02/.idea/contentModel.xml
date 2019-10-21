@@ -19,6 +19,10 @@
           <e p="PlayerController.cs" t="Include" />
           <e p="SnapMovement.cs" t="Include" />
           <e p="StartEvent.cs" t="Include" />
+          <e p="TriggerEvent.cs" t="Include" />
+        </e>
+        <e p="UIControllers" t="Include">
+          <e p="ImageUIController.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

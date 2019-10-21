@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\SnapMovement.cs" />
     <Compile Include="Assets\Scripts\StartEvent.cs" />
+    <Compile Include="Assets\Scripts\TriggerEvent.cs" />
+    <Compile Include="Assets\UIControllers\ImageUIController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/typhl/Documents/Git/DGM1610/Project02/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
