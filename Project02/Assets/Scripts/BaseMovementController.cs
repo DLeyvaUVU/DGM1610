@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class BaseMovementController : MonoBehaviour {
     public CharacterController movementManip;
-    public Vector3 movementVector = Vector3.zero;
+    public Vector2 movementVector = Vector3.zero;
     public Vector2 current2AxisPosition = Vector2.zero;
     public virtual void Awake() {
         movementManip = GetComponent<CharacterController>();
