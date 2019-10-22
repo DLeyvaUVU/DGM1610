@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
 public class GlobalFloat : ScriptableObject {
     public float maxValue = 10;
     public float minValue = 0;

@@ -9,6 +9,8 @@
         <e p="Resources" t="Include">
           <e p="GlobalVars" t="Include">
             <e p="GlobalFloat.cs" t="Include" />
+            <e p="GlobalFloatWithColor.cs" t="Include" />
+            <e p="Subweapon.cs" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">

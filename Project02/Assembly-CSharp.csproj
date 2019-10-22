@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Resources\GlobalVars\GlobalFloat.cs" />
+    <Compile Include="Assets\Resources\GlobalVars\GlobalFloatWithColor.cs" />
+    <Compile Include="Assets\Resources\GlobalVars\Subweapon.cs" />
     <Compile Include="Assets\Scripts\AxisBasedMovement.cs" />
     <Compile Include="Assets\Scripts\BaseEventScript.cs" />
     <Compile Include="Assets\Scripts\BaseMovementController.cs" />

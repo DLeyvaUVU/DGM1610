@@ -10,17 +10,28 @@ public class ImageUIController : MonoBehaviour {
     public float animPower = 2;
     public Coroutine animCoroutine;
     public Image img;
+    public GlobalFloatWithColor data;
+    public bool useGradient = false;
 
     private void Awake() {
         img = GetComponent<Image>();
         img.type = Image.Type.Filled;
+        img.color = data.colorRange.Evaluate(1);
+    }
+
+    private void UpdateColor() {
+        if (useGradient) {
+            img.color = data.colorRange.Evaluate(img.fillAmount);
+        }
     }
 
     private IEnumerator AnimateLinear(float newFill) {
         while (!Mathf.Approximately(img.fillAmount, newFill)) {
             img.fillAmount = Mathf.MoveTowards(img.fillAmount, newFill, animSpeed * Time.deltaTime);
+            UpdateColor();
             yield return null;
         }
+        UpdateColor();
     }
 
     private IEnumerator AnimateSnap(float newFill) {
@@ -29,21 +40,24 @@ public class ImageUIController : MonoBehaviour {
             snapVector = Mathf.Pow(Mathf.Abs(newFill - img.fillAmount), animPower) + animSpeed;
             snapVector *= Time.deltaTime;
             img.fillAmount = Mathf.MoveTowards(img.fillAmount, newFill, snapVector);
+            UpdateColor();
             yield return null;
         }
+        UpdateColor();
     }
 
-    public void UpdateImage(GlobalFloat data) {
+    public virtual void UpdateImage() {
         img.fillAmount = data.magnitude;
+        UpdateColor();
     }
 
-    public void UpdateImageLinear(GlobalFloat data) {
+    public void UpdateImageLinear() {
         if (animCoroutine != null) {
             StopCoroutine(animCoroutine);
         }
         animCoroutine = StartCoroutine(AnimateLinear(data.magnitude));
     }
-    public void UpdateImageSnap(GlobalFloat data) {
+    public void UpdateImageSnap() {
         if (animCoroutine != null) {
             StopCoroutine(animCoroutine);
         }
