@@ -26,6 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AxisBasedMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseEventScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/GameArtData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -46,8 +47,9 @@
         <option value="$PROJECT_DIR$/Assets/UIControllers/ImageUIWithColor.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/GlobalVars/GlobalFloat.cs" />
         <option value="$PROJECT_DIR$/Assets/UIControllers/ImageUIController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/GlobalVars/Collectible.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/GlobalVars/DataCollection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/GameArtData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/GlobalVars/Collectible.cs" />
       </list>
     </option>
   </component>
@@ -105,6 +107,7 @@
       <workItem from="1571619263872" duration="12957000" />
       <workItem from="1571714373631" duration="4610000" />
       <workItem from="1571777984335" duration="2297000" />
+      <workItem from="1571950936421" duration="1838000" />
     </task>
     <servers />
   </component>

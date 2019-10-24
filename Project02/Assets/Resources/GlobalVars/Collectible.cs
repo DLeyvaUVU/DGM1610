@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour {
     public int count = 0;
-    public Sprite icon;
+    public GameArtData icon;
 }
