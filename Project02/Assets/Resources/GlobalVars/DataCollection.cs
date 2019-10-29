@@ -11,10 +11,13 @@ public class DataCollection : ScriptableObject {
     }
 
     public void AddData(Collectible newCollectible) {
+        if (newCollectible.isUnique) {
+            collectionList.Add(newCollectible);
+        }
         if (!collectionList.Contains(newCollectible)) {
             collectionList.Add(newCollectible);
-            collectionList.Sort();
         }
+        collectionList.Sort();
         newCollectible.count++;
     }
 }
