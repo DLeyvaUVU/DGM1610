@@ -18,7 +18,6 @@ public class SnapMovement : BaseMovementController {
     public void SetMoveMode(bool input) {
         moveContinuously = input;
     }
-    
 
     public void SetTarget(Transform newTarget) {
         previousTarget = currentTarget;
