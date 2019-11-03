@@ -9,25 +9,25 @@ public class ImageUIController : MonoBehaviour {
     public float animSpeed = 0.01f;
     public float animPower = 2;
     public Coroutine animCoroutine;
-    public Image img;
+    public Image uiImage;
     public GlobalFloatWithColor data;
     public bool useGradient = false;
 
     private void Awake() {
-        img = GetComponent<Image>();
-        img.type = Image.Type.Filled;
-        img.color = data.colorRange.Evaluate(1);
+        uiImage = GetComponent<Image>();
+        uiImage.type = Image.Type.Filled;
+        uiImage.color = data.colorRange.Evaluate(1);
     }
 
     private void UpdateColor() {
         if (useGradient) {
-            img.color = data.colorRange.Evaluate(img.fillAmount);
+            uiImage.color = data.colorRange.Evaluate(uiImage.fillAmount);
         }
     }
 
     private IEnumerator AnimateLinear(float newFill) {
-        while (!Mathf.Approximately(img.fillAmount, newFill)) {
-            img.fillAmount = Mathf.MoveTowards(img.fillAmount, newFill, animSpeed * Time.deltaTime);
+        while (!Mathf.Approximately(uiImage.fillAmount, newFill)) {
+            uiImage.fillAmount = Mathf.MoveTowards(uiImage.fillAmount, newFill, animSpeed * Time.deltaTime);
             UpdateColor();
             yield return null;
         }
@@ -35,11 +35,11 @@ public class ImageUIController : MonoBehaviour {
     }
 
     private IEnumerator AnimateSnap(float newFill) {
-        float snapVector = Mathf.Abs(newFill - img.fillAmount);
-        while (!Mathf.Approximately(img.fillAmount, newFill)) {
-            snapVector = Mathf.Pow(Mathf.Abs(newFill - img.fillAmount), animPower) + animSpeed;
+        float snapVector = Mathf.Abs(newFill - uiImage.fillAmount);
+        while (!Mathf.Approximately(uiImage.fillAmount, newFill)) {
+            snapVector = Mathf.Pow(Mathf.Abs(newFill - uiImage.fillAmount), animPower) + animSpeed;
             snapVector *= Time.deltaTime;
-            img.fillAmount = Mathf.MoveTowards(img.fillAmount, newFill, snapVector);
+            uiImage.fillAmount = Mathf.MoveTowards(uiImage.fillAmount, newFill, snapVector);
             UpdateColor();
             yield return null;
         }
@@ -47,7 +47,7 @@ public class ImageUIController : MonoBehaviour {
     }
 
     public virtual void UpdateImage() {
-        img.fillAmount = data.magnitude;
+        uiImage.fillAmount = data.magnitude;
         UpdateColor();
     }
 
