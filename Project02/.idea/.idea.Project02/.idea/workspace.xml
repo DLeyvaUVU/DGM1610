@@ -15,12 +15,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CollectibleController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AxisBasedMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UIControllers/uiInterfaces.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UIControllers/ImageUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SnapMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseEventScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UIControllers/GlobalFloatTextUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UIControllers/TextUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseMovementController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -56,7 +58,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/NavMeshSurfaces.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NavMeshAgentController.cs" />
         <option value="$PROJECT_DIR$/Assets/UIControllers/ImageUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIControllers/uiInterfaces.cs" />
         <option value="$PROJECT_DIR$/Assets/UIControllers/TextUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIControllers/GlobalFloatTextUIController.cs" />
       </list>
     </option>
   </component>
@@ -119,7 +123,8 @@
       <workItem from="1572380765323" duration="3648000" />
       <workItem from="1572498533598" duration="3190000" />
       <workItem from="1572553995888" duration="3737000" />
-      <workItem from="1572759391766" duration="1159000" />
+      <workItem from="1572759391766" duration="1756000" />
+      <workItem from="1572832481749" duration="5465000" />
     </task>
     <servers />
   </component>

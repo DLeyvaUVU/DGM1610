@@ -47,8 +47,10 @@
           <e p="TriggerEvent.cs" t="Include" />
         </e>
         <e p="UIControllers" t="Include">
+          <e p="GlobalFloatTextUIController.cs" t="Include" />
           <e p="ImageUIController.cs" t="Include" />
           <e p="TextUIController.cs" t="Include" />
+          <e p="uiInterfaces.cs" t="Include" />
         </e>
       </e>
       <e p="NavMeshComponents.csproj" t="IncludeRecursive" />
