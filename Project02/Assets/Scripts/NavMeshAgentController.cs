@@ -6,12 +6,7 @@ using UnityEngine.AI;
 public class NavMeshAgentController : MonoBehaviour {
     public NavMeshAgent agentAI;
     public Transform currentTarget;
-    void Start() {
+    private void Awake() {
         agentAI = GetComponent<NavMeshAgent>();
-    }
-
-    // Update is called once per frame
-    void Update() {
-        agentAI.destination = currentTarget.position;
     }
 }

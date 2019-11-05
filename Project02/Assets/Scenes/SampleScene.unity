@@ -930,11 +930,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1835990885}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 318dd70da4bb88d42bfbeb9aee32d6a6, type: 3}
+  m_Script: {fileID: 11500000, guid: d95eaf9446fc9fc45912a077f5da41f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agentAI: {fileID: 1835990886}
-  currentTarget: {fileID: 1702729507}
+  currentTarget: {fileID: 1835990890}
+  patrolPoints:
+  - {x: 0, y: 0}
+  currentPatrolPoint: 0
+  patrolPause: 0.5
+  patrolling: 1
+  pausing: 0
+  CurrentState: 0
 --- !u!1 &2070081557
 GameObject:
   m_ObjectHideFlags: 0
