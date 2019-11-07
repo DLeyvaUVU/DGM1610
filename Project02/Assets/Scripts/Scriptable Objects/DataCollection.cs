@@ -28,6 +28,11 @@ public class DataCollection : ScriptableObject {
         }
     }
 
+    public void ClearAllLists() {
+        collectibleList.Clear();
+        subweaponList.Clear();
+    }
+
     public void AddData(Collectible newCollectible) {
         if (newCollectible.isUnique) {
             collectibleList.Add(newCollectible);

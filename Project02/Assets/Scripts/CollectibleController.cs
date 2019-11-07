@@ -11,4 +11,9 @@ public class CollectibleController : TriggerEvent {
         renderSprite.sprite = reward.icon.art;
         renderSprite.color = reward.icon.artColor;
     }
+
+    public void DestroySelf()
+    {
+        Destroy(gameObject);
+    }
 }

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ee84103f1b5864d9552184d36403d0, type: 3}
   m_Name: Medallion
   m_EditorClassIdentifier: 
-  count: 11
+  count: 2
   icon: {fileID: 11400000, guid: 42a4caac607d7e54cafcc80c7fac2f23, type: 2}
   isUnique: 0

@@ -5,21 +5,21 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class FlyingEnemyAI : NavMeshAgentController {
-    public List<Vector2> patrolPoints;
+    public List<Transform> patrolPoints;
     public int currentPatrolPoint;
     public float patrolPause = 0.5f;
     public bool patrolling = true, pausing = false;
     private Coroutine patrolRoutine;
-    public PatrolState CurrentState = PatrolState.Patrolling;
-    
+    public PatrolState currentState = PatrolState.Patrolling;
+
+    private void Start() {
+        agentAI.destination = patrolPoints[0].position;
+    }
+
     public enum PatrolState {
         Patrolling, Chasing, Pausing
     }
     public void AddPatrolPoint(Transform newPatrolPoint) {
-        patrolPoints.Add(newPatrolPoint.position);
-    }
-
-    public void AddPatrolPoint(Vector2 newPatrolPoint) {
         patrolPoints.Add(newPatrolPoint);
     }
 
@@ -27,7 +27,7 @@ public class FlyingEnemyAI : NavMeshAgentController {
         List<float> distances = new List<float>();
         int closestPointIndex = 0;
         foreach (var point in patrolPoints) {//puts distances to patrol points in a list
-            float distance = Vector2.Distance(transform.position, point);
+            float distance = Vector2.Distance(transform.position, point.position);
             distances.Add(distance);
         }
         for (int i = 0; i < distances.Count; i++) {//gets index of the closest patrol point
@@ -35,19 +35,20 @@ public class FlyingEnemyAI : NavMeshAgentController {
                 closestPointIndex = i;
             }
         }
-        agentAI.destination = patrolPoints[closestPointIndex];
+        agentAI.destination = patrolPoints[closestPointIndex].position;
         currentPatrolPoint = closestPointIndex;
     }
     public IEnumerator PatrolToNextPoint() {
-        CurrentState = PatrolState.Pausing;
+        currentState = PatrolState.Pausing;
+        agentAI.isStopped = true;
         yield return new WaitForSeconds(patrolPause);
         currentPatrolPoint++;
-        if (currentPatrolPoint > patrolPoints.Count) {
+        if (currentPatrolPoint > patrolPoints.Count - 1) {
             currentPatrolPoint = 0;
         }
-        agentAI.destination = patrolPoints[currentPatrolPoint];
-        CurrentState = PatrolState.Patrolling;
-        yield return null;
+        agentAI.destination = patrolPoints[currentPatrolPoint].position;
+        currentState = PatrolState.Patrolling;
+        agentAI.isStopped = false;
     }
 
     private void StartRoutine(IEnumerator routine) {
@@ -57,9 +58,10 @@ public class FlyingEnemyAI : NavMeshAgentController {
         patrolRoutine = StartCoroutine(routine);
     }
     private void Update() {
-        switch (CurrentState) {
+        //print(agentAI.remainingDistance);
+        switch (currentState) {
             case PatrolState.Patrolling:
-                if (agentAI.isStopped) {
+                if (Mathf.Approximately(agentAI.remainingDistance, 0)) {
                     StartRoutine(PatrolToNextPoint());
                 }
                 break;
