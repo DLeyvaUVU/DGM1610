@@ -12,23 +12,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/DataCollection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SnapMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FlyingEnemyAI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CollectibleController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseMovementController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/UIControllers/GlobalFloatTextUIController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/UIControllers/ImageUIController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NavMeshAgentController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/UIControllers/TextUIController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AxisBasedMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UIControllers/uiInterfaces.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SnapMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Subweapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NavMeshAgentController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseEventScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UIControllers/GlobalFloatTextUIController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UIControllers/PauseIconController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UIControllers/TextUIController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/DataCollection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseMovementController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UIControllers/GlobalFloatImageUIController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -56,7 +57,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/PlayerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SnapMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NavMeshSurfaces.cs" />
-        <option value="$PROJECT_DIR$/Assets/UIControllers/ImageUIController.cs" />
         <option value="$PROJECT_DIR$/Assets/UIControllers/uiInterfaces.cs" />
         <option value="$PROJECT_DIR$/Assets/UIControllers/TextUIController.cs" />
         <option value="$PROJECT_DIR$/Assets/UIControllers/GlobalFloatTextUIController.cs" />
@@ -64,6 +64,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CollectibleController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/DataCollection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FlyingEnemyAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIControllers/ImageUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Subweapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIControllers/GlobalFloatImageUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIControllers/ImageUIGroupController.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIControllers/PauseIconController.cs" />
       </list>
     </option>
   </component>
@@ -130,6 +135,7 @@
       <workItem from="1572832481749" duration="5465000" />
       <workItem from="1572990138773" duration="5376000" />
       <workItem from="1573163044766" duration="4091000" />
+      <workItem from="1573366675576" duration="3590000" />
     </task>
     <servers />
   </component>

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
-public class ImageUIController : MonoBehaviour {
+public class GlobalFloatImageUIController : MonoBehaviour {
     public float animSpeed = 0.01f;
     public float animPower = 2;
     public Coroutine animCoroutine;
@@ -27,7 +27,7 @@ public class ImageUIController : MonoBehaviour {
 
     private IEnumerator AnimateLinear(float newFill) {
         while (!Mathf.Approximately(uiImage.fillAmount, newFill)) {
-            uiImage.fillAmount = Mathf.MoveTowards(uiImage.fillAmount, newFill, animSpeed * Time.deltaTime);
+            uiImage.fillAmount = Mathf.MoveTowards(uiImage.fillAmount, newFill, animSpeed * Time.unscaledDeltaTime);
             UpdateColor();
             yield return null;
         }
@@ -38,7 +38,7 @@ public class ImageUIController : MonoBehaviour {
         float snapVector = Mathf.Abs(newFill - uiImage.fillAmount);
         while (!Mathf.Approximately(uiImage.fillAmount, newFill)) {
             snapVector = Mathf.Pow(Mathf.Abs(newFill - uiImage.fillAmount), animPower) + animSpeed;
-            snapVector *= Time.deltaTime;
+            snapVector *= Time.unscaledDeltaTime;
             uiImage.fillAmount = Mathf.MoveTowards(uiImage.fillAmount, newFill, snapVector);
             UpdateColor();
             yield return null;

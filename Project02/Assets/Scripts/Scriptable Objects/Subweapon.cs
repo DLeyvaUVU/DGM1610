@@ -5,6 +5,6 @@ using UnityEngine.UI;
 [CreateAssetMenu]
 public class Subweapon : GlobalFloat {
     public string weaponName;
-    public Image icon;
+    public GameArtData icon;
     public GameObject prefab;
 }
