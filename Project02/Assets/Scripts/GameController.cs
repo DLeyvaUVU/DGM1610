@@ -8,6 +8,7 @@ public class GameController : StartEvent {
     public GameObject mainCam;
     public PlayerData selectedPlayer;
     public GameObject playerInstance;
+    public UnityEvent pauseEvent;
     private void Awake() {
         selectedPlayer.instanceAction = SetPlayer;
         selectedPlayer.InstantiateObject(transform.position);
@@ -16,5 +17,11 @@ public class GameController : StartEvent {
         playerInstance = obj;
         var camScript = mainCam.GetComponent<SnapMovement>();
         camScript.SetTarget(playerInstance.transform);
+    }
+
+    private void Update() {
+        if (Input.GetButtonDown("Submit")) {
+            pauseEvent.Invoke();
+        }
     }
 }

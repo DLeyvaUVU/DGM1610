@@ -11,7 +11,7 @@ public class FlyingEnemyAI : NavMeshAgentController {
     public bool patrolling = true, pausing = false;
     private Coroutine patrolRoutine;
     public PatrolState currentState = PatrolState.Patrolling;
-
+    public Collider detectionCollider;
     private void Start() {
         agentAI.destination = patrolPoints[0].position;
     }
@@ -57,6 +57,7 @@ public class FlyingEnemyAI : NavMeshAgentController {
         }
         patrolRoutine = StartCoroutine(routine);
     }
+    
     private void Update() {
         //print(agentAI.remainingDistance);
         switch (currentState) {

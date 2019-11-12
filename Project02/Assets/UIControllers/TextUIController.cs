@@ -11,6 +11,8 @@ public class TextUIController : MonoBehaviour {
     public string currentText, nextText;
     public TextAnimType textSpeed = TextAnimType.Slow;
     private Coroutine textAnim;
+    private WaitForSecondsRealtime wfsSlow = new WaitForSecondsRealtime(0.1f);
+    private WaitForSecondsRealtime wfsMedium = new WaitForSecondsRealtime(0.05f);
     public enum TextAnimType {
         Slow, Medium, Fast, DoubleFast, Instant
     }
@@ -63,10 +65,10 @@ public class TextUIController : MonoBehaviour {
                     yield return null;
                     break;
                 case TextAnimType.Medium:
-                    yield return new WaitForSeconds(0.05f);
+                    yield return wfsMedium;
                     break;
                 case TextAnimType.Slow:
-                    yield return new WaitForSeconds(0.1f);
+                    yield return wfsSlow;
                     break;
                 
             }
