@@ -7,13 +7,9 @@ public class CollectibleController : TriggerEvent {
     public Collectible reward;
 
     private void Awake() {
+        gameObject.layer = 13;
         var renderSprite = GetComponent<SpriteRenderer>();
         renderSprite.sprite = reward.icon.art;
         renderSprite.color = reward.icon.artColor;
-    }
-
-    public void DestroySelf()
-    {
-        Destroy(gameObject);
     }
 }

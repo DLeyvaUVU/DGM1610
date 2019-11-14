@@ -8,7 +8,10 @@ public class TriggerEvent : BaseEventScript {
         var triggerCollider = GetComponent<Collider>();
         triggerCollider.isTrigger = true;
     }
-
+    public void DestroySelf()
+    {
+        Destroy(gameObject);
+    }
     private void OnTriggerEnter(Collider other) {
         baseEvent.Invoke();
     }

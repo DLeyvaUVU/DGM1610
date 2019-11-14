@@ -12,12 +12,9 @@ public class PauseIconController : MonoBehaviour {
 
     private void Awake() {
         uiImage = GetComponent<Image>();
-        uiImage.sprite = icon.art;
-        imageColor = icon.artColor;
-        uiImage.color = imageColor;
-
+        imageColor = Color.gray;
+        UpdateAlpha(0f);
     }
-
     public void FadeAlpha(float newAlpha) {
         if (animCoroutine != null) {
             StopCoroutine(animCoroutine);
@@ -29,6 +26,12 @@ public class PauseIconController : MonoBehaviour {
         Mathf.Clamp01(newAlpha);
         imageColor.a = newAlpha;
         uiImage.color = imageColor;
+    }
+
+    public void UpdateImage(GameArtData newIcon) {
+        icon = newIcon;
+        uiImage.sprite = icon.art;
+        imageColor = icon.artColor;
     }
 
     public IEnumerator AnimateAlpha(float newAlpha) {

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: MedallionArtData
   m_EditorClassIdentifier: 
   art: {fileID: 21300000, guid: 6447766b2f2220649b892824c43b65b7, type: 3}
-  artColor: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
+  artColor: {r: 1, g: 0, b: 0, a: 1}

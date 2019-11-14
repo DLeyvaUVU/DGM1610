@@ -32,6 +32,8 @@
           <e p="FlyingEnemyAI.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="NavMeshAgentController.cs" t="Include" />
+          <e p="OnEnableScript.cs" t="Include" />
+          <e p="PauseCollectionController.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="Scriptable Objects" t="Include">
             <e p="Collectible.cs" t="Include" />

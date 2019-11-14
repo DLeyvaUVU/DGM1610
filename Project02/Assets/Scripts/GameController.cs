@@ -9,6 +9,7 @@ public class GameController : StartEvent {
     public PlayerData selectedPlayer;
     public GameObject playerInstance;
     public UnityEvent pauseEvent;
+    private bool paused = false;
     private void Awake() {
         selectedPlayer.instanceAction = SetPlayer;
         selectedPlayer.InstantiateObject(transform.position);
@@ -19,9 +20,14 @@ public class GameController : StartEvent {
         camScript.SetTarget(playerInstance.transform);
     }
 
+    public void ToggleActive(GameObject obj) {
+        obj.SetActive(!obj.activeSelf);
+    }
     private void Update() {
         if (Input.GetButtonDown("Submit")) {
             pauseEvent.Invoke();
+            paused = !paused;
+            Time.timeScale = paused ? 0 : 1;
         }
     }
 }
