@@ -12,16 +12,31 @@ public class FlyingEnemyAI : NavMeshAgentController {
     private Coroutine patrolRoutine;
     public PatrolState currentState = PatrolState.Patrolling;
     public Collider detectionCollider;
+    
+    public enum PatrolState {
+        Patrolling, Chasing, Pausing
+    }
+
+    public void StartChase() {
+        currentState = PatrolState.Chasing;
+    }
+    public void StopChase() {
+        ReturnToPatrol();
+        currentState = PatrolState.Patrolling;
+    }
     private void Start() {
         agentAI.destination = patrolPoints[0].position;
     }
-
-    public enum PatrolState {
-        Patrolling, Chasing, Pausing
+    private void StartRoutine(IEnumerator routine) {
+        if (patrolRoutine != null) {
+            StopCoroutine(patrolRoutine);
+        }
+        patrolRoutine = StartCoroutine(routine);
     }
     public void AddPatrolPoint(Transform newPatrolPoint) {
         patrolPoints.Add(newPatrolPoint);
     }
+    
 
     private void ReturnToPatrol() {//returns to closest patrol point
         List<float> distances = new List<float>();
@@ -50,13 +65,7 @@ public class FlyingEnemyAI : NavMeshAgentController {
         currentState = PatrolState.Patrolling;
         agentAI.isStopped = false;
     }
-
-    private void StartRoutine(IEnumerator routine) {
-        if (patrolRoutine != null) {
-            StopCoroutine(patrolRoutine);
-        }
-        patrolRoutine = StartCoroutine(routine);
-    }
+    
     
     private void Update() {
         //print(agentAI.remainingDistance);
