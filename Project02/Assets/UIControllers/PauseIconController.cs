@@ -7,12 +7,13 @@ using UnityEngine.UI;
 public class PauseIconController : MonoBehaviour {
     public GameArtData icon;
     public Image uiImage;
-    private Color imageColor;
+    public Color imageColor = Color.gray;
     private Coroutine animCoroutine;
+    public float enabledAlpha = 1;
 
     private void Awake() {
         uiImage = GetComponent<Image>();
-        imageColor = Color.gray;
+        Mathf.Clamp01(enabledAlpha);
         UpdateAlpha(0f);
     }
     public void FadeAlpha(float newAlpha) {
@@ -31,6 +32,7 @@ public class PauseIconController : MonoBehaviour {
     public void UpdateImage(GameArtData newIcon) {
         icon = newIcon;
         uiImage.sprite = icon.art;
+        uiImage.useSpriteMesh = true;
         imageColor = icon.artColor;
     }
 
@@ -43,7 +45,7 @@ public class PauseIconController : MonoBehaviour {
         UpdateAlpha(newAlpha);
     }
     private void OnEnable() {
-        FadeAlpha(1);
+        FadeAlpha(enabledAlpha);
     }
 
     private void OnDisable() {

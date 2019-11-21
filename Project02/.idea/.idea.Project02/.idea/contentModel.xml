@@ -45,6 +45,7 @@
             <e p="InstancerData.cs" t="Include" />
             <e p="PlayerData.cs" t="Include" />
             <e p="Subweapon.cs" t="Include" />
+            <e p="TimerVars.cs" t="Include" />
           </e>
           <e p="SnapMovement.cs" t="Include" />
           <e p="StartEvent.cs" t="Include" />

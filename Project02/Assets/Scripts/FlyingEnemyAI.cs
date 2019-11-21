@@ -6,23 +6,27 @@ using UnityEngine.AI;
 
 public class FlyingEnemyAI : NavMeshAgentController {
     public List<Transform> patrolPoints;
+    public Transform chaseTarget;
     public int currentPatrolPoint;
-    public float patrolPause = 0.5f;
+    public float patrolPause = 0.5f, patrolSpeed = 2, chaseSpeed = 4;
     public bool patrolling = true, pausing = false;
     private Coroutine patrolRoutine;
     public PatrolState currentState = PatrolState.Patrolling;
-    public Collider detectionCollider;
+    public TriggerEnterExit detectionScript;
     
     public enum PatrolState {
         Patrolling, Chasing, Pausing
     }
 
     public void StartChase() {
+        agentAI.speed = chaseSpeed;
         currentState = PatrolState.Chasing;
+        chaseTarget = detectionScript.entryFocus;
     }
     public void StopChase() {
-        ReturnToPatrol();
+        agentAI.speed = patrolSpeed;
         currentState = PatrolState.Patrolling;
+        ReturnToPatrol();
     }
     private void Start() {
         agentAI.destination = patrolPoints[0].position;
@@ -76,6 +80,7 @@ public class FlyingEnemyAI : NavMeshAgentController {
                 }
                 break;
             case PatrolState.Chasing:
+                agentAI.destination = chaseTarget.position;
                 break;
             case PatrolState.Pausing:
                 break;
