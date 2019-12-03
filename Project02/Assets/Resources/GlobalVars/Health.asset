@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxValue: 30
   minValue: 0
-  currentValue: 10
-  magnitude: 0.33333334
+  currentValue: 30
+  magnitude: 1
   colorRange:
     serializedVersion: 2
     key0: {r: 1, g: 0, b: 0, a: 1}

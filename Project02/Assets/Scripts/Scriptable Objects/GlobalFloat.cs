@@ -10,14 +10,7 @@ public class GlobalFloat : ScriptableObject {
 
     public void UpdateValue(int input) {
         currentValue += input;
-        if (currentValue > maxValue) {
-            currentValue = maxValue;
-        }
-
-        if (currentValue < minValue) {
-            currentValue = minValue;
-        }
-        
+        Mathf.Clamp(currentValue, minValue, maxValue);
         magnitude = currentValue / maxValue;
     }
 }

@@ -79,6 +79,7 @@ MonoBehaviour:
   rooted: 0
   stunned: 0
   confused: 0
+  health: {fileID: 11400000, guid: 0baefe79847f1994186c86fb5878712a, type: 2}
 --- !u!212 &2593574830326125978
 SpriteRenderer:
   m_ObjectHideFlags: 0

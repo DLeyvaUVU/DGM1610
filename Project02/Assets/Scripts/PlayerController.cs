@@ -2,10 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : AxisBasedMovement {
     public bool rooted = false, stunned = false, confused = false;
-    
+    public GlobalFloat health;
+    private IEnumerator OnTriggerEnter(Collider other) {
+        yield return null;
+        if (Mathf.Approximately(health.currentValue, 0)) {
+            print("You lost, lol.");
+            yield return null;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
+
     public virtual void Update() {
         if (Input.GetButtonDown("Jump") && jumpCount < maxJump) {
             jumpCount++;

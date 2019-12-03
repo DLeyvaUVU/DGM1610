@@ -13,6 +13,7 @@ public class FlyingEnemyAI : NavMeshAgentController {
     private Coroutine patrolRoutine;
     public PatrolState currentState = PatrolState.Patrolling;
     public TriggerEnterExit detectionScript;
+    private WaitForSeconds pauseWait;
     
     public enum PatrolState {
         Patrolling, Chasing, Pausing
@@ -20,16 +21,18 @@ public class FlyingEnemyAI : NavMeshAgentController {
 
     public void StartChase() {
         agentAI.speed = chaseSpeed;
+        agentAI.isStopped = false;
         currentState = PatrolState.Chasing;
         chaseTarget = detectionScript.entryFocus;
     }
     public void StopChase() {
         agentAI.speed = patrolSpeed;
-        currentState = PatrolState.Patrolling;
-        ReturnToPatrol();
+        currentState = PatrolState.Pausing;
+        Invoke(nameof(ReturnToPatrol), patrolPause);
     }
     private void Start() {
         agentAI.destination = patrolPoints[0].position;
+        pauseWait = new WaitForSeconds(patrolPause);
     }
     private void StartRoutine(IEnumerator routine) {
         if (patrolRoutine != null) {
@@ -43,6 +46,8 @@ public class FlyingEnemyAI : NavMeshAgentController {
     
 
     private void ReturnToPatrol() {//returns to closest patrol point
+        currentState = PatrolState.Patrolling;
+        agentAI.isStopped = false;
         List<float> distances = new List<float>();
         int closestPointIndex = 0;
         foreach (var point in patrolPoints) {//puts distances to patrol points in a list
@@ -60,7 +65,7 @@ public class FlyingEnemyAI : NavMeshAgentController {
     public IEnumerator PatrolToNextPoint() {
         currentState = PatrolState.Pausing;
         agentAI.isStopped = true;
-        yield return new WaitForSeconds(patrolPause);
+        yield return pauseWait;
         currentPatrolPoint++;
         if (currentPatrolPoint > patrolPoints.Count - 1) {
             currentPatrolPoint = 0;
@@ -72,7 +77,6 @@ public class FlyingEnemyAI : NavMeshAgentController {
     
     
     private void Update() {
-        //print(agentAI.remainingDistance);
         switch (currentState) {
             case PatrolState.Patrolling:
                 if (Mathf.Approximately(agentAI.remainingDistance, 0)) {
@@ -83,6 +87,7 @@ public class FlyingEnemyAI : NavMeshAgentController {
                 agentAI.destination = chaseTarget.position;
                 break;
             case PatrolState.Pausing:
+                agentAI.isStopped = true;
                 break;
         }
     }
