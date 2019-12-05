@@ -12,13 +12,27 @@ public class GlobalFloatImageUIController : MonoBehaviour {
     public Image uiImage;
     public GlobalFloatWithColor data;
     public bool useGradient = false;
-
+    public AnimType updateMode = AnimType.Instant;
     private void Awake() {
         uiImage = GetComponent<Image>();
         uiImage.type = Image.Type.Filled;
         uiImage.color = data.colorRange.Evaluate(1);
+        switch (updateMode) {
+            case AnimType.Snap:
+                data.updateAction = UpdateImageSnap;
+                break;
+            case AnimType.Linear:
+                data.updateAction = UpdateImageLinear;
+                break;
+            case AnimType.Instant:
+                data.updateAction = UpdateImage;
+                break;
+        }
     }
 
+    public enum AnimType {
+       Snap, Linear, Instant 
+    }
     private void UpdateColor() {
         if (useGradient) {
             uiImage.color = data.colorRange.Evaluate(uiImage.fillAmount);

@@ -46,21 +46,27 @@ public class FlyingEnemyAI : NavMeshAgentController {
     
 
     private void ReturnToPatrol() {//returns to closest patrol point
-        currentState = PatrolState.Patrolling;
-        agentAI.isStopped = false;
-        List<float> distances = new List<float>();
-        int closestPointIndex = 0;
-        foreach (var point in patrolPoints) {//puts distances to patrol points in a list
-            float distance = Vector2.Distance(transform.position, point.position);
-            distances.Add(distance);
-        }
-        for (int i = 0; i < distances.Count; i++) {//gets index of the closest patrol point
-            if (distances[i] < distances[closestPointIndex]) {
-                closestPointIndex = i;
+        if (currentState == PatrolState.Pausing) {
+            currentState = PatrolState.Patrolling;
+            agentAI.isStopped = false;
+            List<float> distances = new List<float>();
+            int closestPointIndex = 0;
+            foreach (var point in patrolPoints) {
+                //puts distances to patrol points in a list
+                float distance = Vector2.Distance(transform.position, point.position);
+                distances.Add(distance);
             }
+
+            for (int i = 0; i < distances.Count; i++) {
+                //gets index of the closest patrol point
+                if (distances[i] < distances[closestPointIndex]) {
+                    closestPointIndex = i;
+                }
+            }
+
+            agentAI.destination = patrolPoints[closestPointIndex].position;
+            currentPatrolPoint = closestPointIndex;
         }
-        agentAI.destination = patrolPoints[closestPointIndex].position;
-        currentPatrolPoint = closestPointIndex;
     }
     public IEnumerator PatrolToNextPoint() {
         currentState = PatrolState.Pausing;

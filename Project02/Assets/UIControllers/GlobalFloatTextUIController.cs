@@ -11,6 +11,7 @@ public class GlobalFloatTextUIController : MonoBehaviour {
     private void Awake() {
         uiText = GetComponent<Text>();
         UpdateText();
+        textContent.updateAction += UpdateText;
     }
 
     public void UpdateText() {
