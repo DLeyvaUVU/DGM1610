@@ -11,8 +11,9 @@ public class AxisBasedMovement : BaseMovementController
     public float jumpCount = 0;
     public bool running = false;
 
-    public void AddMomentum(float newMomentum) {
-        momentum.y += newMomentum;
+    public void AddMomentum(float newMomentumX, float newMomentumY) {
+        momentum.x += newMomentumX;
+        momentum.y += newMomentumY;
     }
     public float ApplyGravity(float fallAxis) {
         if (!movementManip.isGrounded) {
@@ -30,12 +31,14 @@ public class AxisBasedMovement : BaseMovementController
     public void MoveX(float input) {
         movementVector.x = moveSpeed;
         movementVector.x *= running ? runMultiplier * input : input;
+        AddMomentum(movementVector.x * Time.deltaTime, 0f);
         movementManip.Move((movementVector + momentum) * Time.deltaTime);
     }
 
     public void MoveY(float input) {
         movementVector.y = moveSpeed;
         movementVector.y *= running ? runMultiplier * input : input;
+        AddMomentum(0f, movementVector.y * Time.deltaTime);
         movementManip.Move((movementVector + momentum) * Time.deltaTime);
     }
 
@@ -45,6 +48,7 @@ public class AxisBasedMovement : BaseMovementController
         if (running) {
             movementVector *= runMultiplier;
         }
+        AddMomentum(movementVector.x * Time.deltaTime, movementVector.y * Time.deltaTime);
         movementManip.Move((movementVector + momentum) * Time.deltaTime);
     }
 
@@ -52,6 +56,7 @@ public class AxisBasedMovement : BaseMovementController
         current2AxisPosition = transform.position;
         movementVector = GetDirection(current2AxisPosition, target);
         movementVector *= running ? moveSpeed * runMultiplier : moveSpeed;
+        AddMomentum(movementVector.x * Time.deltaTime, movementVector.y * Time.deltaTime);
         movementManip.Move((movementVector + momentum) * Time.deltaTime);
     }
 

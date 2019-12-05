@@ -43,7 +43,6 @@ public class FlyingEnemyAI : NavMeshAgentController {
     public void AddPatrolPoint(Transform newPatrolPoint) {
         patrolPoints.Add(newPatrolPoint);
     }
-    
 
     private void ReturnToPatrol() {//returns to closest patrol point
         if (currentState == PatrolState.Pausing) {

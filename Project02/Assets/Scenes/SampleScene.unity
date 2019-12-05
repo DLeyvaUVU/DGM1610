@@ -309,6 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
   uiImage: {fileID: 0}
+  uiOutline: {fileID: 0}
   imageColor: {r: 0, g: 0, b: 0, a: 1}
   enabledAlpha: 0.5
 --- !u!114 &67363094
@@ -837,6 +838,16 @@ PrefabInstance:
         type: 3}
       propertyPath: imageColor.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436010770451124494, guid: 54bb11a6d0cc4684286a5195efc65a80,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436010770451124494, guid: 54bb11a6d0cc4684286a5195efc65a80,
+        type: 3}
+      propertyPath: m_EffectColor.a
+      value: 0.5019608
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54bb11a6d0cc4684286a5195efc65a80, type: 3}
@@ -1763,6 +1774,16 @@ PrefabInstance:
     - target: {fileID: 9050200404827339230, guid: 54bb11a6d0cc4684286a5195efc65a80,
         type: 3}
       propertyPath: imageColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127954642610402487, guid: 54bb11a6d0cc4684286a5195efc65a80,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127954642610402487, guid: 54bb11a6d0cc4684286a5195efc65a80,
+        type: 3}
+      propertyPath: m_Colors.m_ColorMultiplier
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

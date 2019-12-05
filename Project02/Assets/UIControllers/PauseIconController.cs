@@ -2,17 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
 using UnityEngine.UI;
+using Image = UnityEngine.UI.Image;
 
 public class PauseIconController : MonoBehaviour {
     public GameArtData icon;
     public Image uiImage;
+    public Outline uiOutline;
     public Color imageColor = Color.gray;
     private Coroutine animCoroutine;
     public float enabledAlpha = 1;
 
     private void Awake() {
         uiImage = GetComponent<Image>();
+        uiOutline = GetComponent<Outline>();
         Mathf.Clamp01(enabledAlpha);
         UpdateAlpha(0f);
     }
