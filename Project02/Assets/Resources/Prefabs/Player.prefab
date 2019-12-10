@@ -73,7 +73,7 @@ MonoBehaviour:
   jumpVector: 12
   maxJump: 1
   terminalVelocity: 20
-  friction: 5
+  friction: 10
   jumpCount: 0
   running: 0
   rooted: 0

@@ -67,10 +67,10 @@ MonoBehaviour:
   movementVector: {x: 0, y: 0}
   current2AxisPosition: {x: 0, y: 0}
   momentum: {x: 0, y: 0}
-  moveSpeed: 5
-  runMultiplier: 2
+  moveSpeed: 3
+  runMultiplier: 1.5
   gravity: 20
-  jumpVector: 8
+  jumpVector: 10
   maxJump: 2
   terminalVelocity: 20
   friction: 3

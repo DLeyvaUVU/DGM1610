@@ -16,7 +16,14 @@ public class PlayerController : AxisBasedMovement {
         spriteRend.sprite = artData.art;
         spriteRend.color = artData.artColor;
     }
-
+    private IEnumerator OnTriggerEnter(Collider other) {
+        yield return null;
+        if (Mathf.Approximately(health.currentValue, 0)) {
+            print("You lost, lol.");
+            yield return null;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
     public void ShiftUp(float shiftFactor) {
         MoveXY(0, shiftFactor);
     }
