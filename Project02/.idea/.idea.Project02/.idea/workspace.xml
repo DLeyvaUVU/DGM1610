@@ -27,6 +27,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/DataCollection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GlobalFloat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CollectibleController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerSwitcherScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AxisBasedMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/TimerVars.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,7 +48,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BaseEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BaseEventScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StartEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BaseMovementController.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/GlobalFloatData.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/GlobalVars/SubweaponWithAmmo.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/GlobalVars/Subweapon.cs" />
@@ -79,8 +79,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GlobalFloat.cs" />
         <option value="$PROJECT_DIR$/Assets/UIControllers/GlobalFloatTextUIController.cs" />
         <option value="$PROJECT_DIR$/Assets/UIControllers/GlobalFloatImageUIController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AxisBasedMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FlyingEnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/UIControllers/PauseIconController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/CoreController.cs" />
@@ -90,6 +88,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CollectibleController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/InstancerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AxisBasedMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BaseMovementController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSwitcherScript.cs" />
       </list>
     </option>
   </component>
@@ -171,6 +173,7 @@
       <workItem from="1575871704147" duration="2221000" />
       <workItem from="1575951622950" duration="600000" />
       <workItem from="1575956051487" duration="3603000" />
+      <workItem from="1575961100727" duration="7650000" />
     </task>
     <servers />
   </component>

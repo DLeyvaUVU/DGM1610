@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\PauseCollectionController.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\CoreController.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerSwitcherScript.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\Collectible.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\DataCollection.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\EffectData.cs" />

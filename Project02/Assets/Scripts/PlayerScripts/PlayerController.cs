@@ -16,12 +16,13 @@ public class PlayerController : AxisBasedMovement {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
-
     public virtual void Update() {
         if (Input.GetButtonDown("Jump") && jumpCount < maxJump) {
             jumpCount++;
             movementVector.y = jumpVector;
         }
+
+        running = Input.GetButton("Run") ? true : false;
         MoveX(stunned? 0: rooted? 0: Input.GetAxis("Horizontal")); //can only move if you aren't stunned or rooted
         if (movementManip.isGrounded) {
             jumpCount = 0;

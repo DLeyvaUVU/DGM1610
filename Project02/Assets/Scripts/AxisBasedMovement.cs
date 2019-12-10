@@ -24,7 +24,8 @@ public class AxisBasedMovement : BaseMovementController
             }
         }
         else {
-            fallAxis = -gravity;
+            float horizontalMomentum = Mathf.Abs(momentum.x) * 2;
+            fallAxis = -Mathf.Clamp(gravity - horizontalMomentum, 0, gravity);
         }
         return fallAxis;
     }
