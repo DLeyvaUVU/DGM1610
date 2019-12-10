@@ -34,6 +34,7 @@
           <e p="InputEvent.cs" t="Include" />
           <e p="NavMeshAgentController.cs" t="Include" />
           <e p="OnEnableScript.cs" t="Include" />
+          <e p="ParticleEffectController.cs" t="Include" />
           <e p="PauseCollectionController.cs" t="Include" />
           <e p="PlayerScripts" t="Include">
             <e p="CoreController.cs" t="Include" />
