@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90ee84103f1b5864d9552184d36403d0, type: 3}
-  m_Name: MedallionRed
+  m_Script: {fileID: 11500000, guid: a820f0598245c6d44b9e855d3bba5824, type: 3}
+  m_Name: Player2
   m_EditorClassIdentifier: 
-  count: 0
-  icon: {fileID: 11400000, guid: 42a4caac607d7e54cafcc80c7fac2f23, type: 2}
-  isUnique: 1
+  prefab: {fileID: 8510634616574191697, guid: 100948e269e94cb4cb2fe1581bbcd26a, type: 3}
+  currentSubweapon: {fileID: 0}
+  artData: {fileID: 11400000, guid: 54d32e3f32121644ab17e7f755e4ed2f, type: 2}

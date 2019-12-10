@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PlayerArt
   m_EditorClassIdentifier: 
   art: {fileID: 21300000, guid: 4901226325f0ce54a95cc7cf995352f5, type: 3}
-  artColor: {r: 1, g: 1, b: 1, a: 1}
+  artColor: {r: 0.5188679, g: 0, b: 0, a: 1}

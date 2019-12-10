@@ -11,7 +11,7 @@ public class DataCollection : ScriptableObject {
     }
     public List<Collectible> collectibleList;
     public List<Subweapon> subweaponList;
-    
+    public int winCondition;
 
     public void ClearList(int selection) {
         ListType listSelection = (ListType)selection;
@@ -28,6 +28,11 @@ public class DataCollection : ScriptableObject {
         }
     }
 
+    public void CheckWin() {
+        if (collectibleList.Count >= winCondition) {
+            Debug.Log("You win, I guess.");
+        }
+    }
     public void ClearAllLists() {
         collectibleList.Clear();
         subweaponList.Clear();
@@ -37,11 +42,14 @@ public class DataCollection : ScriptableObject {
         if (newCollectible.isUnique) {
             collectibleList.Add(newCollectible);
         }
+        else {
+            newCollectible.count++;
+        }
         if (!collectibleList.Contains(newCollectible)) {
             collectibleList.Add(newCollectible);
         }
         collectibleList.Sort();
-        newCollectible.count++;
+        CheckWin();
     }
 
     public void AddData(Subweapon newSubweapon) {

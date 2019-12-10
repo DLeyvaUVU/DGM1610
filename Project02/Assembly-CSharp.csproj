@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\Scriptable Objects\PlayerData.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\Subweapon.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\TimerVars.cs" />
+    <Compile Include="Assets\Scripts\ShiftPlayer.cs" />
     <Compile Include="Assets\Scripts\SnapMovement.cs" />
     <Compile Include="Assets\Scripts\StartEvent.cs" />
     <Compile Include="Assets\Scripts\TriggerEnterExit.cs" />

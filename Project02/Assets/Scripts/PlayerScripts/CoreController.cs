@@ -22,10 +22,17 @@ public class CoreController : MonoBehaviour {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
+    private bool IsGrounded() {
+        return Physics.Raycast(transform.position, -Vector3.up, 0.6f);
+    }
+    public void Jump() {
+        coreBody.AddForce(0, jumpForce, 0);
+    }
     private void Update() {
         coreBody.AddForce(Input.GetAxis("Horizontal")*moveForce, 0, 0);
-        if (Input.GetButtonDown("Jump") && Mathf.Approximately(0, coreBody.velocity.y)) {
-            coreBody.AddForce(0, jumpForce, 0);
+        
+        if (Input.GetButtonDown("Jump") && IsGrounded()) {
+            Jump();
         }
     }
 }
