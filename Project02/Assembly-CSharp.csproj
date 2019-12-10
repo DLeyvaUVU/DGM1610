@@ -66,11 +66,13 @@
     <Compile Include="Assets\Scripts\InputEvent.cs" />
     <Compile Include="Assets\Scripts\NavMeshAgentController.cs" />
     <Compile Include="Assets\Scripts\OnEnableScript.cs" />
+    <Compile Include="Assets\Scripts\ParticleEffectController.cs" />
     <Compile Include="Assets\Scripts\PauseCollectionController.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\CoreController.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\Collectible.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\DataCollection.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Objects\EffectData.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\GameArtData.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\GlobalFloat.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\GlobalFloatWithColor.cs" />

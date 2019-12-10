@@ -13,7 +13,7 @@ public class TriggerEvent : BaseEventScript {
     {
         Destroy(gameObject);
     }
-    private void OnTriggerEnter(Collider other) {
+    public void OnTriggerEnter(Collider other) {
         entryFocus = other.transform;
         baseEvent.Invoke();
     }

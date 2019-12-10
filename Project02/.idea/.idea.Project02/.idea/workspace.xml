@@ -16,8 +16,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/CoreController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FlyingEnemyAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerEnterExit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ParticleEffectController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/EffectData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseEventScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UIControllers/GlobalFloatTextUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UIControllers/TextUIController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,7 +60,6 @@
         <option value="$PROJECT_DIR$/Assets/Resources/GlobalVars/Collectible.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/GlobalVars/DataCollection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/ScObjInterfaces.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/PlayerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SnapMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NavMeshSurfaces.cs" />
         <option value="$PROJECT_DIR$/Assets/UIControllers/uiInterfaces.cs" />
@@ -68,13 +69,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Subweapon.cs" />
         <option value="$PROJECT_DIR$/Assets/UIControllers/ImageUIGroupController.cs" />
         <option value="$PROJECT_DIR$/Assets/UIControllers/TextUIController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CollectibleController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnEnable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PauseCollectionController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEnterExit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/TimerVars.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GlobalFloat.cs" />
@@ -85,6 +84,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FlyingEnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/UIControllers/PauseIconController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/CoreController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/EffectData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ParticleEffectController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CollectibleController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/InstancerData.cs" />
       </list>
     </option>
   </component>
@@ -165,6 +170,7 @@
       <workItem from="1575582277907" duration="5031000" />
       <workItem from="1575871704147" duration="2221000" />
       <workItem from="1575951622950" duration="600000" />
+      <workItem from="1575956051487" duration="3603000" />
     </task>
     <servers />
   </component>

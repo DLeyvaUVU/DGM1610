@@ -4,5 +4,5 @@ using UnityEngine;
 [CreateAssetMenu]
 public class PlayerData : InstancerData {
     public Subweapon currentSubweapon;
-    
+    public GameArtData artData;
 }

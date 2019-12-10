@@ -43,6 +43,7 @@
           <e p="Scriptable Objects" t="Include">
             <e p="Collectible.cs" t="Include" />
             <e p="DataCollection.cs" t="Include" />
+            <e p="EffectData.cs" t="Include" />
             <e p="GameArtData.cs" t="Include" />
             <e p="GlobalFloat.cs" t="Include" />
             <e p="GlobalFloatWithColor.cs" t="Include" />
